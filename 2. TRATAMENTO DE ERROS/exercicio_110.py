@@ -7,11 +7,11 @@ from pathlib import Path
 arquivo = Path('exercicio_110.txt')
 
 if not arquivo.is_file():
-    with open('../TRATAMENTO DE ERROS/exercicio_110.txt', 'w', encoding='utf-8') as arquivo:
+    with open('../2. TRATAMENTO DE ERROS/exercicio_110.txt', 'w', encoding='utf-8') as arquivo:
         arquivo.write('Arquivo criado com sucesso!\n')
 
 def cadastrarPessoas():
-    with open('../TRATAMENTO DE ERROS/exercicio_110.txt', 'a', encoding='utf-8') as arquivo:
+    with open('../2. TRATAMENTO DE ERROS/exercicio_110.txt', 'a', encoding='utf-8') as arquivo:
         nome = input('Digite o nome da pessoa: ')
         idade = input('Digite a idade da pessoa: ')
         arquivo.write(f'Nome: {nome} - Idade: {idade}\n')
@@ -19,7 +19,7 @@ def cadastrarPessoas():
         
 
 def listarPessoas():
-    with open('../TRATAMENTO DE ERROS/exercicio_110.txt', 'r', encoding='utf-8') as arquivo:
+    with open('../2. TRATAMENTO DE ERROS/exercicio_110.txt', 'r', encoding='utf-8') as arquivo:
         print('-='*30)
         print(arquivo.read().center(60))
         print('-='*30)
